@@ -43,7 +43,7 @@ router.post("/signin", function (req, res) {
                                 sessionToken: token
                             })
                         } else {
-                            res.status(502).send({ error: "failed to login" })
+                            res.status(502).send({ error: "failed to find user" })
                         }
                     })
                 } else {
